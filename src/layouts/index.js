@@ -15,8 +15,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-      <div className="pb5 pb6-m pb7-l">    
-        <Header />
+      <div className="pb5 pb6-m pb6 -l">    
+        <Header color="black-70" />
       {children()}
       </div>
     </div>
@@ -27,6 +27,5 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-
 
 

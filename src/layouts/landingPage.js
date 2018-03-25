@@ -6,8 +6,8 @@ import Header from '../components/Header'
 import '../utilities/tachyons.min.css';
 
 const TemplateWrapper = ({ children }) => (
-    <div className="avenir">
-        <div className="cover bg-left bg-center-l" style={{backgroundImage:'url("/static/background.jpg")'}}>
+    <div className="vh-100 avenir">
+        <div className="cover h-100 bg-left bg-center-l" style={{backgroundImage:'url("/static/background.jpg")'}}>
             <Helmet
                 title="Tucker McKinney - Web Developer
                 "
@@ -16,8 +16,8 @@ const TemplateWrapper = ({ children }) => (
                 { name: 'keywords', content: 'sample, something' },
                 ]}
             />
-            <div className="pb5 pb6-m pb7-l">    
-                <Header />
+            <div className="pb5 pb6-m pb6-l">    
+                <Header color="black-70" />
                 {children()}
             </div>
         </div>
