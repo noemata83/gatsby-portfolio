@@ -16,10 +16,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
       <div className="pb5 pb6-m pb6 -l">    
-        <Header color="black-70" />
+        <Header border="bb" color="black-70" />
       {children()}
       </div>
-    </div>
+  </div>
 )
 
 TemplateWrapper.propTypes = {

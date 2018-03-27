@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer/Footer';
 import '../utilities/tachyons.min.css';
 
 const TemplateWrapper = ({ children }) => (
-    <div className="vh-100 avenir">
-        <div className="cover h-100 bg-left bg-center-l" style={{backgroundImage:'url("/static/background.jpg")'}}>
+    <div className="avenir">
+        <div className="vh-100 cover bg-left bg-center-l" style={{backgroundImage:'url("/static/background.jpg")', viewHeight:'90%'}}>
             <Helmet
                 title="Tucker McKinney - Web Developer
                 "
@@ -17,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
                 ]}
             />
             <div className="pb5 pb6-m pb6-l">    
-                <Header color="black-70" />
+                <Header border="" color="black-70" />
                 {children()}
             </div>
         </div>
