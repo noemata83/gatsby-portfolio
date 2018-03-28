@@ -36,6 +36,12 @@ const Projects = () => (
                     alt="Lambda Land"
                     stack="Node, Express, Tachyons, Hyperscript, Ramda"
                     />
+                <Project
+                    title="tuckermckinney.io"
+                    description="A developer portfolio site built with GatsbyJS"
+                    img="/static/background.jpg"
+                    alt="tuckermckinney.io"
+                    stack="GatsbyJS, React, GraphQL, Markdown, Tachyons.css" />
             </div>
         </div>
 )
