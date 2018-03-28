@@ -20,18 +20,21 @@ const Projects = () => (
                     description="A site for lovers of vintage fountain pens."
                     img="/static/landing-crop-2.jpg"
                     alt="Rosspens.com"
+                    stack="Node, Express, MongoDB, EJS, Sass, AWS S3"
                     />
                 <Project
                     title="Omnivorous"
                     description="A recipe manager and shopping list app"
                     img="/static/omnivorous.jpg"
                     alt="Omnivorous"
+                    stack="Node, Express, MongoDB, React"
                     />
                 <Project
                     title="Lambda Land"
                     description="A suite of apps in a functional style"
                     img="/static/lambda.png"
                     alt="Lambda Land"
+                    stack="Node, Express, Tachyons, Hyperscript, Ramda"
                     />
             </div>
         </div>

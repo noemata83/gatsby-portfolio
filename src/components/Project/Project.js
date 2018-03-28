@@ -10,6 +10,7 @@ const Project = (props) => (
                 <div className="dtc">
                     <h1 className="f5 f4-ns mv0">{props.title}</h1>
                     <p className="f6 lh-copy measure mt2 mid-gray">{props.description}</p>
+                    <p className="f6 v-btm"><strong>Tech Stack</strong>: {props.stack}</p>
                 </div>
             </div>
         </div>
