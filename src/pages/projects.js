@@ -3,7 +3,17 @@ import PageTitle from '../components/PageTitle/pageTitle';
 
 import Project from '../components/Project/Project';
 
-const Projects = () => (
+const Projects = ({data}) => {
+        const projects = data.allMarkdownRemark.edges.map(({node}) => 
+        <Project
+                key={node.id}
+                title={node.frontmatter.title}
+                description={node.frontmatter.description}
+                img={node.frontmatter.image}
+                alt={node.frontmatter.title}
+                stack={node.frontmatter.techStack}
+                />);
+        return (
         <div className="center mw8 mt4 pv4 ph2-m">
             <div className="db">
                 <div className="tc v-mid fl h3 w-100 black-70 mb3 mr5" style={{backgroundImage:'url("/static/background.jpg")', backgroundSize: '100%', backgroundOrigin: 'border-box', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed'}}>
@@ -15,35 +25,31 @@ const Projects = () => (
                 </div>
             </div>
             <div className="db f3 w-100 flex-ns flex-wrap-ns justify-between">
-                <Project 
-                    title="Rosspens.com"
-                    description="A site for lovers of vintage fountain pens."
-                    img="/static/landing-crop-2.jpg"
-                    alt="Rosspens.com"
-                    stack="Node, Express, MongoDB, EJS, Sass, AWS S3"
-                    />
-                <Project
-                    title="Omnivorous"
-                    description="A recipe manager and shopping list app"
-                    img="/static/omnivorous.jpg"
-                    alt="Omnivorous"
-                    stack="Node, Express, MongoDB, React"
-                    />
-                <Project
-                    title="Lambda Land"
-                    description="A suite of apps in a functional style"
-                    img="/static/lambda.png"
-                    alt="Lambda Land"
-                    stack="Node, Express, Tachyons, Hyperscript, Ramda"
-                    />
-                <Project
-                    title="tuckermckinney.io"
-                    description="A developer portfolio site built with GatsbyJS"
-                    img="/static/background.jpg"
-                    alt="tuckermckinney.io"
-                    stack="GatsbyJS, React, GraphQL, Markdown, Tachyons.css" />
+                {projects}    
             </div>
         </div>
-)
+    );
+}
+
+export const query = graphql`
+    query ProjectQuery {
+        allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex:"/data/.*\\.md$/"}}
+          ) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        techStack
+                        image
+                        demo
+                        description
+                    }
+                }
+            }
+        }
+    }
+`
 
 export default Projects

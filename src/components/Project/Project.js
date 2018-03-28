@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = (props) => (
+const Project = ( props) => (
     <article className="dib br2 ba dark-gray b--black-10 mv3 mw-100 mw5-m-l shadow-4" style={{flexBasis:'45%'}}>
         <div className="hide-child relative center v-mid" style={{maxHeight:'300px', overflow:'hidden'}}>
             <div className="child absolute dib w-100 h-100 bg-black-40 pointer" style={{top: 0, left: 0, zIndex:2}}>
@@ -18,6 +18,6 @@ const Project = (props) => (
             </div>
         </div>
     </article>
-)
+);
 
 export default Project;

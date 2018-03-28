@@ -1,5 +1,6 @@
 ---
 title: tuckermckinney.io
+description: A developer portfolio built with GatsbyJS
 techStack: GatsbyJS, React, GraphQL, Markdown, Tachyons.css
 image: /static/background.jpg
 demo: 

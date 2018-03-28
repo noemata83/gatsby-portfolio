@@ -12,7 +12,7 @@ const Header = (props) => {
     <div className="dtc v-mid tr pa3">
       <Link className="f4 fw4 hover-yellow no-underline black-70 dn dib-l pv2 ph3" to="/about" >About</Link> 
       <Link className="f4 fw4 hover-yellow no-underline black-70 dn dib-l pv2 ph3" to="/projects" >Projects</Link> 
-      <Link className="f4 fw4 hover-yellow no-underline black-70 dn dib-l pv2 ph3" to="/" >Blog</Link>
+      <Link className="f4 fw4 hover-yellow no-underline black-70 dn dib-l pv2 ph3" to="/blog" >Blog</Link>
       <Link className="f4 fw4 hover-yellow no-underline black-70 dn dib-l pv2 ph3" to="/" >Contact</Link>
     </div>
   </nav>
