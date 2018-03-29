@@ -11,8 +11,8 @@ const TemplateWrapper = ({ children }) => (
       title="Tucker McKinney - Web Developer
       "
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Freelance web developer based in Hillsborough, NC with expertise in Wordpress, Node.js, and Django' },
+        { name: 'keywords', content: 'Web Developer, Wordpress, Hillsborough NC, Node.js, Django' },
       ]}
     />
       <div className="pb5 pb6-m pb6 -l">    

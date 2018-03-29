@@ -8,12 +8,12 @@ import '../utilities/tachyons.min.css';
 
 const TemplateWrapper = ({ children }) => (
     <div className="avenir">
-        <div className={[classes.LandingPage, "vh-100 cover bg-left bg-center-l"].join(' ')}>
+        <div className={[classes.LandingPage, "vh-100 cover bg-left bg-center-l"].join(' ')}    >
             <Helmet
                 title="Tucker McKinney - Web Developer"
                 meta={[
                 { name: 'description', content: 'Freelance web developer based in Hillsborough, NC with expertise in Wordpress, Node.js, and Django' },
-                { name: 'keywords', content: 'sample, something' },
+                { name: 'keywords', content: 'Web Developer, Wordpress, Hillsborough NC, Node.js, Django' },
                 ]}
             />
             <div className="pb5 pb6-m pb6-l">    

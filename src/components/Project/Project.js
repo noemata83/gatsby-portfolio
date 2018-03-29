@@ -35,8 +35,14 @@ class Project extends Component {
                     </div>
                 </div>
                 <div className={[classes.Reveal, show].join(' ')} style={{transition: 'all .5s'}}>
-                    <span class="f4">{this.props.title}<i className="fr pointer" onClick={() => this.closeDetail()}>&times;</i></span>
-                    <div className="f5" dangerouslySetInnerHTML={{__html: this.props.detail}} />
+                    <div onClick={() => this.closeDetail()}>
+                        <span className="f3">{this.props.title}<i className="fr pointer">&times;</i></span>
+                        <div className="f5" dangerouslySetInnerHTML={{__html: this.props.detail}} />
+                    </div>
+                    <div className={classes.Buttons}>
+                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" href={this.props.demo}>Demo</a>
+                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" href={this.props.repo}>View on Github</a>
+                    </div>
                 </div>
             </article>
         )

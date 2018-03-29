@@ -15,6 +15,8 @@ const Projects = ({ data }) => {
                 img={node.frontmatter.imageURL.publicURL}
                 alt={node.frontmatter.title}
                 stack={node.frontmatter.techStack}
+                demo={node.frontmatter.demo}
+                repo={node.frontmatter.repo}
                 detail={node.html}
                 />);
         return (
@@ -51,6 +53,7 @@ export const query = graphql`
                         }
                         demo
                         description
+                        repo
                     }
                     html
                 }
