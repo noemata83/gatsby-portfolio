@@ -5,6 +5,8 @@ import Parser from 'html-react-parser';
 import Project from '../components/Project/Project';
 import Modal from '../components/UI/Modal/Modal';
 
+import classes from './projects.module.css';
+
 class Projects extends Component {
     state = {
         showModal: false,
@@ -38,7 +40,7 @@ class Projects extends Component {
         <div className="center mw8 mt4 pv4 ph2-m">
             <Modal show={this.state.showModal} modalClosed={this.closeModalHandler}>{Parser(this.state.detail)}</Modal>
             <div className="db">
-                <div className="tc v-mid fl h3 w-100 black-70 mb3 mr5" style={{backgroundImage:'url("/static/background.jpg")', backgroundSize: '100%', backgroundOrigin: 'border-box', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed'}}>
+                <div className={[classes.Header, "tc v-mid fl h3 w-100 black-70 mb3 mr5"].join(' ')}>
                     <div className="h-100 w-100 relative">
                         <div className="absolute dib" style={{border:"1px solid white", height: '90%', width: '98%', top: '5%', left: '1%'}}>
                             <h1 className="dib absolute fw3 white ma0" style={{top:'50%', left:'50%', transform:'translate(-50%, -50%)'}}>projects</h1>
