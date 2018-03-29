@@ -2,7 +2,7 @@
 title: Rosspens.com
 description: A website for lovers of vintage fountain pens
 techStack: Node.js, Express, MongoDB, EJS, AWS-S3, Sass
-image: /static/landing-crop-2.jpg
+imageURL: '../assets/landing-crop-2.jpg'
 demo: http://rosspens.herokuapp.com/
 ---
 

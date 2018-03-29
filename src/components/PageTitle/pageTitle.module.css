@@ -1,5 +1,5 @@
 .PageTitle {
-    background-image: url("/static/background.jpg");
+    background-image: url(../../assets/background.jpg);
     background-size: 100%; 
     background-origin: border-box; 
     background-repeat: no-repeat;

@@ -26,7 +26,7 @@ class Projects extends Component {
                 key={node.id}
                 title={node.frontmatter.title}
                 description={node.frontmatter.description}
-                img={node.frontmatter.image}
+                img={node.frontmatter.imageURL.publicURL}
                 alt={node.frontmatter.title}
                 stack={node.frontmatter.techStack}
                 detail={this.state.showModal}
@@ -65,7 +65,9 @@ export const query = graphql`
                     frontmatter {
                         title
                         techStack
-                        image
+                        imageURL {
+                            publicURL
+                        }
                         demo
                         description
                     }

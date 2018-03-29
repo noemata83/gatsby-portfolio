@@ -2,7 +2,7 @@
 title: Omnivorous
 description: A recipe manager and shopping list app
 techStack: Node.js, MongoDB, Express, React.js, Redux
-image: /static/omnivorous.jpg
+imageURL: '../assets/omnivorous.jpg'
 demo: http://omnivorous.herokuapp.com/
 ---
 

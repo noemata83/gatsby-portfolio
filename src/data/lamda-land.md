@@ -2,7 +2,7 @@
 title: Lambda Land
 description: A suite of apps in a functional style
 techStack: Node.js, Express, Hyperscript, Ramda, Tachyons.css
-image: /static/lambda.png
+imageURL: '../assets/lambda.png'
 demo: ''
 ---
 
