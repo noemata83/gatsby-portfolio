@@ -1,29 +1,13 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import PageTitle from '../components/PageTitle/pageTitle';
 import Parser from 'html-react-parser';
 
 import Project from '../components/Project/Project';
-import Modal from '../components/UI/Modal/Modal';
 
 import classes from './projects.module.css';
 
-class Projects extends Component {
-    state = {
-        showModal: false,
-        detail: ''
-    }
-
-    showDetail = (detail) => {
-        this.setState({showModal: true,
-        detail });
-    }
-
-    closeModalHandler = () => {
-        this.setState({showModal: false, detail: ''});
-    }
-
-    render() {
-        const projects = this.props.data.allMarkdownRemark.edges.map(({node}) => 
+const Projects = ({ data }) => {
+        const projects = data.allMarkdownRemark.edges.map(({node}) => 
         <Project
                 key={node.id}
                 title={node.frontmatter.title}
@@ -31,14 +15,10 @@ class Projects extends Component {
                 img={node.frontmatter.imageURL.publicURL}
                 alt={node.frontmatter.title}
                 stack={node.frontmatter.techStack}
-                detail={this.state.showModal}
-                showDetail={this.showDetail}
-                closeModal={this.closeModalHandler}
                 detail={node.html}
                 />);
         return (
         <div className="center mw8 mt4 pv4 ph2-m">
-            <Modal show={this.state.showModal} modalClosed={this.closeModalHandler}>{Parser(this.state.detail)}</Modal>
             <div className="db">
                 <div className={[classes.Header, "tc v-mid fl h3 w-100 black-70 mb3 mr5"].join(' ')}>
                     <div className="h-100 w-100 relative">
@@ -53,7 +33,6 @@ class Projects extends Component {
             </div>
         </div>
     );
-    }
 }
 
 export const query = graphql`
