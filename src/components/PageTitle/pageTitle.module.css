@@ -1,0 +1,13 @@
+.PageTitle {
+    background-image: url("/static/background.jpg");
+    background-size: 100%; 
+    background-origin: border-box; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media(max-width: 800px) {
+    .PageTitle {
+        background-size: 200%;
+    }
+}
