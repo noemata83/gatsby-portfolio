@@ -9,10 +9,9 @@ const TemplateWrapper = ({ children }) => (
     <div className="avenir">
         <div className="vh-100 cover bg-left bg-center-l" style={{backgroundImage:'url("/static/background.jpg")', viewHeight:'90%'}}>
             <Helmet
-                title="Tucker McKinney - Web Developer
-                "
+                title="Tucker McKinney - Web Developer"
                 meta={[
-                { name: 'description', content: 'Sample' },
+                { name: 'description', content: 'Freelance web developer based in Hillsborough, NC with expertise in Wordpress, Node.js, and Django' },
                 { name: 'keywords', content: 'sample, something' },
                 ]}
             />
