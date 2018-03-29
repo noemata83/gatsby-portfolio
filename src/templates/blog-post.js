@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 export default ({ data }) => {
     const post = data.markdownRemark;
@@ -6,6 +7,7 @@ export default ({ data }) => {
         <div className="center mw8 mt4 pv4 ph2-m">
             <h1>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{__html: post.html }} />
+            <Link to="/blog" className="link">Return to blog index</Link>
         </div>
     )
 }
