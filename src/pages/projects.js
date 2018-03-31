@@ -20,7 +20,7 @@ const Projects = ({ data }) => {
                 detail={node.html}
                 />);
         return (
-        <div className="center mw8 mt4 pv4 ph2-m">
+        <div className="center mw8 mt4 pv4 ph3">
             <div className="db">
                 <div className={[classes.Header, "tc v-mid fl h3 w-100 black-70 mb3 mr5"].join(' ')}>
                     <div className="h-100 w-100 relative">

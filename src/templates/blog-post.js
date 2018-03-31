@@ -7,9 +7,9 @@ export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <div className="center mw8 mt4 pv4 ph2-m">
-            <h1>{post.frontmatter.title}<span className="fr gray">{post.frontmatter.date}</span></h1>
+            <h1 className="f2 f3-m f3-s bb-l">{post.frontmatter.title}<span className="db fr-l gray nb bb-s bb-m">{post.frontmatter.date}</span></h1>
             <div dangerouslySetInnerHTML={{__html: post.html }} />
-            <Link to="/blog" className="db mt5 f4 link">Return to blog index</Link>
+            <Link to="/blog" className="db mt5 f4 link">Return to Blog</Link>
         </div>
     )
 }
