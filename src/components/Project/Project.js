@@ -18,7 +18,7 @@ class Project extends Component {
     render() {
         const show = this.state.reveal ? classes.Show : null;
         return ( 
-            <article className="dib br2 relative ba dark-gray b--black-10 mv3 mw-100 mw5-m-l shadow-4" style={{flexBasis:'45%', transition: 'all .5s', overflow: 'hidden'}}>
+            <article className={["dib br2 relative ba dark-gray b--black-10 mv3 shadow-4", classes.Project].join(' ')}>
                 <div className="hide-child relative center v-mid" style={{maxHeight:'300px', overflow:'hidden'}}>
                     <div className="child absolute dib w-100 h-100 bg-black-40 pointer" style={{top: 0, left: 0, zIndex:2}} onClick={() => this.showDetail()}>
                         <span className="white dtc v-mid center absolute" style={{top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} >Click for more</span>

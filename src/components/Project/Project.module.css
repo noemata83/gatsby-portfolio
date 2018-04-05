@@ -1,3 +1,15 @@
+.Project {
+    flex-basis: 45%;
+    transition: all .5s; 
+    overflow: hidden;
+}
+
+@media(max-width: 900px) {
+    .Project {
+        flex-basis: 100%;
+    }
+}
+
 .Reveal {
     padding: 1.5rem;
     position: absolute;
