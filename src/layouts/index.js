@@ -10,7 +10,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Tucker McKinney - Web Developer"
       meta={[
-        { name: 'description', content: 'Freelance web developer based in Hillsborough, NC with expertise in Wordpress, Node.js, and Django' },
+        { name: 'description', content: 'Freelance web developer based in Hillsborough, NC with expertise in React.js, Node.js, WordPress, and Django' },
         { name: 'keywords', content: 'Web Developer, Wordpress, Hillsborough NC, Node.js, Django' },
       ]}
     />

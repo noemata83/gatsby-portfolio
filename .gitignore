@@ -6,3 +6,6 @@ yarn-error.log
 
 # Build directory
 public/
+
+# Blog drafts
+src/blogs/drafts
