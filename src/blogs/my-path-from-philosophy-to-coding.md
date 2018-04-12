@@ -1,5 +1,5 @@
 ---
-title: How Well Do We Know Ourselves?: My Path from Philosophy to Coding
+title: "How Well Do We Know Ourselves? My Path from Philosophy to Coding"
 date: "2018-04-12"
 ---
 
