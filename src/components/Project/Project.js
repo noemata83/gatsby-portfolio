@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import classes from './Project.module.css';
+import Img from 'gatsby-image';
 
 class Project extends Component {
     state = {
@@ -23,7 +24,7 @@ class Project extends Component {
                     <div className="child absolute dib w-100 h-100 bg-black-40 pointer" style={{top: 0, left: 0, zIndex:2}} onClick={() => this.showDetail()}>
                         <span className="white dtc v-mid center absolute" style={{top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} >Click for more</span>
                     </div>
-                    <img className="db w-100 br2 br--top dim" src={this.props.img} alt={this.props.alt} />
+                    <Img fluid={this.props.img} className="db w-100 br2 br--top dim" alt={this.props.alt} />
                 </div>
                 <div className="pa4 ph4-ns pb4-ns">
                     <div className="dt w-100 mt1">
@@ -40,8 +41,8 @@ class Project extends Component {
                         <div className="f5" dangerouslySetInnerHTML={{__html: this.props.detail}} />
                     </div>
                     <div className={classes.Buttons}>
-                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" target="_blank" href={this.props.demo}>Demo</a>
-                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" target="_blank" href={this.props.repo}>View on Github</a>
+                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" target="_blank" rel="noopener noreferrer" href={this.props.demo}>Demo</a>
+                        <a className="f5 link dim ba ph3 pv2 mb2 dib black mh4 mb4" target="_blank" rel="noopener noreferrer" href={this.props.repo}>View on Github</a>
                     </div>
                 </div>
             </article>

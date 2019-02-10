@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import '../utilities/tachyons.min.css';
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ( { children }) => (
   <div className="avenir">
     <Helmet
       title="Tucker McKinney - Web Developer"
@@ -16,15 +16,15 @@ const TemplateWrapper = ({ children }) => (
     />
       <div className="pb5 pb6-m pb6 -l">    
         <Header border="bb" color="black-70" />
-      {children()}
+      {children}
       </div>
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+Layout.propTypes = {
+  children: PropTypes.object,
 }
 
-export default TemplateWrapper
+export default Layout
 
 

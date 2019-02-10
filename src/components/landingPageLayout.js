@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import classes from './landingPage.module.css'
 import '../utilities/tachyons.min.css';
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children }) => (
     <div className="avenir">
         <div className={[classes.LandingPage, "vh-100 cover bg-left bg-center-l"].join(' ')}    >
             <Helmet
@@ -18,15 +17,12 @@ const TemplateWrapper = ({ children }) => (
             />
             <div className="pb5 pb6-m pb6-l">    
                 <Header border="" color="black-70" />
-                {children()}
+                {children}
             </div>
         </div>
     </div>
 )
 
-TemplateWrapper.propTypes = {
-    children: PropTypes.func,
-  }
   
-  export default TemplateWrapper
+  export default Layout
   
