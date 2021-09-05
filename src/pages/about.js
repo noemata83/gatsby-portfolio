@@ -1,20 +1,38 @@
-import React from 'react';
+import React from 'react'
 import Layout from '../components/layout'
-import PageTitle from '../components/PageTitle/pageTitle';
-import Link from 'gatsby-link';
+import PageTitle from '../components/PageTitle/pageTitle'
 
 const About = () => (
-    <Layout>
-        <div className="center mw8 mt4 pv4 ph3">
-            <PageTitle title="about" />
-            <p className="db lh-copy w-100 black-70 fw1 f4 f3-m mt0">
-                I am a freelance full-stack web developer based in Hillsborough, NC. I work on a wide variety of projects: from elegant, user-friendly websites for trusted platforms like Wordpress, to complex, custom-built single page applications using the latest technologies, including React.js, Node.js, and GraphQL. I enjoy working with a variety of clients, including small businesses, non-profits, and research institutions. If you are looking for a web developer for an upcoming project, please <Link to="/contact" className="link black">contact me</Link>. <br />
-                <br />
-                Before I became a developer, I taught philosophy at the College of William and Mary in Williamsburg, VA. I lectured about ethics and wrote about the German existentialists. If this interests you, you can read excerpts from my past life <a className="link black" href="https://philpapers.org/profile/609">here</a>. I am also <a className="link black" href="http://flickr.com/photos/tmckinne83/">a hobbyist photographer</a>. In my spare time, I tinker with everything.<br />
-                <br />
-            </p>
-        </div>
-    </Layout>
+  <Layout>
+    <div className="center mw8 mt4 pv4 ph3">
+      <PageTitle title="about" />
+      <p className="db lh-copy w-100 black-70 fw1 f4 f3-m mt0">
+        I am a Full Stack developer at{' '}
+        <a href="https://daysmart.com">DaySmart Software</a>. I am primarily
+        interested in developing domain-driven workflows that are easy to reason
+        about for developers and non-technical stakeholders alike, and easy to
+        extend. To do this, I draw upon and evangelize for the abstractions of
+        the FP (functional programming) paradigm. In my day-to-day, I work with
+        TypeScript, Node.js, Angular, and C#, but I have also worked with React,
+        Python, Haskell, and Rust in other contexts. (I strive to be tech-stack
+        agnostic)
+      </p>
+      <p className="db lh-copy w-100 black-70 fw1 f4 f3-m mt0">
+        Before I became a developer, I taught philosophy at the College of
+        William and Mary in Williamsburg, VA. I lectured about ethics and wrote
+        about the German existentialists. If this interests you, you can read
+        excerpts from my past life{' '}
+        <a href="https://philpapers.org/profile/609">here</a>. I am also{' '}
+        <a href="http://flickr.com/photos/tmckinne83/">
+          a hobbyist photographer
+        </a>
+        .
+      </p>
+      <p className="db lh-copy w-100 black-70 fw1 f4 f3-m mt0">
+        In my spare time, I tinker with everything.
+      </p>
+    </div>
+  </Layout>
 )
 
 export default About
