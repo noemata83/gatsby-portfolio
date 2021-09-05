@@ -10,12 +10,11 @@ const About = () => (
         I am a Full Stack developer at{' '}
         <a href="https://daysmart.com">DaySmart Software</a>. I am primarily
         interested in developing domain-driven workflows that are easy to reason
-        about for developers and non-technical stakeholders alike, and easy to
-        extend. To do this, I draw upon and evangelize for the abstractions of
-        the FP (functional programming) paradigm. In my day-to-day, I work with
-        TypeScript, Node.js, Angular, and C#, but I have also worked with React,
-        Python, Haskell, and Rust in other contexts. (I strive to be tech-stack
-        agnostic)
+        about and easy to extend. To do this, I draw upon and evangelize for the
+        abstractions of the FP (functional programming) paradigm and
+        domain-driven design. In my day-to-day, I work with TypeScript, Node.js,
+        Angular, and C#, but I have also worked with React, Python, Haskell, and
+        Rust in other contexts. (I strive to be tech-stack agnostic)
       </p>
       <p className="db lh-copy w-100 black-70 fw1 f4 f3-m mt0">
         Before I became a developer, I taught philosophy at the College of
