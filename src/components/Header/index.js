@@ -28,13 +28,6 @@ const Header = (props) => {
         <Link
           className="f5 f4-m f4-l fw4 hover-yellow no-underline black-70 dib pv2 ph3"
           activeClassName={classes.active}
-          to="/blog"
-        >
-          Blog
-        </Link>
-        <Link
-          className="f5 f4-m f4-l fw4 hover-yellow no-underline black-70 dib pv2 ph3"
-          activeClassName={classes.active}
           to="/contact"
         >
           Contact
